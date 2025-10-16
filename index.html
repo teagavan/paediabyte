@@ -1,43 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- keep your existing meta tags, then add the following: -->
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://teragavan.github.io/paediabyte/" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PaediaByte! – Online Teaching for Paediatric Postgraduates</title>
+  <meta name="description" content="PaediaByte! Online teaching module for paediatric postgraduates. Organised by a group of paediatricians in India & UK.">
 
-<!-- Open Graph -->
-<meta property="og:title" content="PaediaByte! – Online Teaching for Paediatric Postgraduates" />
-<meta property="og:description" content="Online teaching modules for paediatric postgraduates, organised by paediatricians in India & the UK." />
-<meta property="og:url" content="https://teragavan.github.io/paediabyte/" />
-<meta property="og:type" content="website" />
-<!-- Optional image: add one to your repo and point to it -->
-<!-- <meta property="og:image" content="https://teragavan.github.io/paediabyte/og-image.jpg" /> -->
+  <!-- SEO -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://teragavan.github.io/paediabyte/" />
 
-<!-- Twitter card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="PaediaByte! – Online Teaching for Paediatric Postgraduates" />
-<meta name="twitter:description" content="Online teaching modules for paediatric postgraduates, organised by paediatricians in India & the UK." />
-<!-- <meta name="twitter:image" content="https://teragavan.github.io/paediabyte/og-image.jpg" /> -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-<!-- JSON-LD: EducationalOrganization + contact -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "PaediaByte!",
-  "url": "https://teragavan.github.io/paediabyte/",
-  "description": "Online teaching modules for paediatric postgraduates, organised by paediatricians in India & the UK.",
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "contactType": "Program enquiries",
-    "email": "g.divya_11@yahoo.co.in",
-    "telephone": "+91-9998515814",
-    "areaServed": "IN,GB"
-  }]
-}
-</script>
+  <!-- Open Graph -->
+  <meta property="og:title" content="PaediaByte! – Online Teaching for Paediatric Postgraduates" />
+  <meta property="og:description" content="Online teaching modules for paediatric postgraduates, organised by paediatricians in India & the UK." />
+  <meta property="og:url" content="https://teragavan.github.io/paediabyte/" />
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:image" content="https://teragavan.github.io/paediabyte/og-image.jpg" /> -->
 
-<!-- (Optional) Google Search Console verification: replace with the meta tag that Google gives you and keep it here -->
-<!-- <meta name="google-site-verification" content="PASTE_YOUR_CODE_HERE" /> -->
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PaediaByte! – Online Teaching for Paediatric Postgraduates" />
+  <meta name="twitter:description" content="Online teaching modules for paediatric postgraduates, organised by paediatricians in India & the UK." />
+  <!-- <meta name="twitter:image" content="https://teragavan.github.io/paediabyte/og-image.jpg" /> -->
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "PaediaByte!",
+    "url": "https://teragavan.github.io/paediabyte/",
+    "description": "Online teaching modules for paediatric postgraduates, organised by paediatricians in India & the UK.",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "Program enquiries",
+      "email": "g.divya_11@yahoo.co.in",
+      "telephone": "+91-9998515814",
+      "areaServed": "IN,GB"
+    }]
+  }
+  </script>
+
+  <!-- Styles -->
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --brand: #1e293b;
+      --accent: #2563eb;
+      --accent-weak: #dbeafe;
+      --card: #f8fafc;
+      --ring: rgba(37, 99, 235, 0.25);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    header {
+      padding: 64px 20px 32px;
+      text-align: center;
+      background: linear-gradient(180deg, var(--accent-weak), #fff);
+      border-bottom: 1px solid #eef2f7;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.2;
+      margin: 0 0 8px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--brand);
+    }
+    .subtitle {
+      margin: 0 auto;
+      max-width: 700px;
+      color: var(--muted);
+      font-size: clamp(15px, 2.4vw, 18px);
+    }
+    .cta {
+      margin-top: 28px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.06s ease, box-shadow 0.2s ease;
+      outline: none;
+    }
+    .btn:focus-visible { box-shadow: 0 0 0 4px var(--ring); }
+    .btn.primary { background: var(--accent); color: white; }
+    .btn.secondary { background: #fff; color: var(--accent); border-color: var(--accent); }
+    main { padding: 40px 0 56px; }
+    .card {
+      background: var(--card);
+      border: 1px solid #e8eef7;
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 2px rgba(2, 8, 23, 0.04);
+    }
+    .section-title { font-size: 20px; font-weight: 700; margin: 0 0 8px; color: var(--brand); }
+    .muted { color: var(--muted); }
+    footer {
+      padding: 28px 20px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid #eef2f7;
+      background: #fcfdff;
+    }
+    .list { margin: 0; padding-left: 20px; }
+    .tag {
+      display: inline-block; background: var(--accent-weak); color: var(--accent);
+      padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: .02em;
+    }
+    .two-col { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    @media (min-width: 720px) { .two-col { grid-template-columns: 1.2fr .8fr; } }
+  </style>
+</head>
+
 <body>
   <header>
     <div class="container">
@@ -63,9 +167,9 @@
       <aside class="card">
         <h3 class="section-title">Contact</h3>
         <p><strong>Organising Lead:</strong> Dr. Divya Gopalan</p>
-        <p><strong>Email:</strong> <a href="mailto:REPLACE_WITH_YAHOO_EMAIL">g.divya_11@yahoo.co.in</a></p>
+        <p><strong>Email:</strong> <a href="mailto:g.divya_11@yahoo.co.in">g.divya_11@yahoo.co.in</a></p>
         <p><strong>WhatsApp (optional):</strong> +91-9998515814</p>
-       </aside>
+      </aside>
     </div>
 
     <div class="container">
