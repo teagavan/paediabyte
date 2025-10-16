@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://teragavan.github.io/paediabyte/sitemap.xml
