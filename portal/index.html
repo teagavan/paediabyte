@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PaediaByte – Student Portal</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#fff;--text:#0f172a;--muted:#475569;--card:#f8fafc;--blue:#2563eb;--purple:#7c3aed;--pink:#ec4899;--radius:16px}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text)}
+    header{padding:56px 20px 24px;text-align:center;color:#fff;background:linear-gradient(135deg,rgba(37,99,235,.9),rgba(124,58,237,.9) 50%,rgba(236,72,153,.9))}
+    h1{margin:0 0 6px;font-weight:800;letter-spacing:-.02em}
+    main{max-width:900px;margin:0 auto;padding:28px 20px 60px}
+    .card{background:var(--card);border:1px solid #e8eef7;border-radius:var(--radius);padding:20px;margin-bottom:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:999px;text-decoration:none;color:#fff;background:var(--blue);font-weight:700}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+    ul{margin:8px 0 0 18px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PaediaByte – Student Portal</h1>
+    <p>Registered students can access schedules, links and recordings.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Login / Access</h2>
+      <p>If you are a new student, please <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdqQgY-FLZFEMLjjtuU-S6s8kTSJqRT21QuKcAsvJboZDNk-g/viewform?usp=header" target="_blank" rel="noopener">Register here</a>.</p>
+      <p class="muted">Later this page can include a proper login via Firebase or Cloudflare Access.</p>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h3>Upcoming Sessions</h3>
+        <ul>
+          <li><strong>Neonatology Essentials</strong> – Fri 7 PM IST – Zoom link will be emailed</li>
+          <li><strong>PICU Ventilation Basics</strong> – Wed 7 PM IST – link TBA</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Recordings (example)</h3>
+        <ul>
+          <li><a href="#" aria-disabled="true">Feb Case Discussions (login required)</a></li>
+          <li><a href="#" aria-disabled="true">Cardiology Q&A (login required)</a></li>
+        </ul>
+        <p class="muted">Add your Google Drive / YouTube unlisted links here later.</p>
+      </section>
+    </div>
+
+    <section class="card">
+      <h3>Suggest a Topic</h3>
+      <p>Tell us what you want covered next.</p>
+      <p><a class="btn" style="background:#ec4899" href="https://docs.google.com/forms/d/e/1FAIpQLSdqQgY-FLZFEMLjjtuU-S6s8kTSJqRT21QuKcAsvJboZDNk-g/viewform?usp=pp_url&entry.999999=Topic%20Suggestion" target="_blank" rel="noopener">Submit Topic</a></p>
+    </section>
+  </main>
+</body>
+</html>
